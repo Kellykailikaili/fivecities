@@ -1,0 +1,259 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title> Home Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<body >
+<section class="white-stripe arrow">
+ <div class="container">
+
+     <div class="card-wrap">
+         <a class="card" style="background-image: url('Images/images/01.JPG');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Venice</div>
+                 <div class="card__text">2016</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/02.JPG');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Quebec City</div>
+                 <div class="card__text">2018</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/03.JPG');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Paris</div>
+                 <div class="card__text">2016</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/04.jpg');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Sweden</div>
+                 <div class="card__text">2018</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/05.JPG');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Miami</div>
+                 <div class="card__text">2017</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/06.JPG');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Lisbon</div>
+                 <div class="card__text">2017</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/07.JPG');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Malta</div>
+                 <div class="card__text">2017</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/08.jpeg');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Seoul</div>
+                 <div class="card__text">2016</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/09.jpeg');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Qing Dao</div>
+                 <div class="card__text">2014</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/10.jpeg');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">New York</div>
+                 <div class="card__text">2017</div>
+             </div>
+         </a>
+         <a class="card" style="background-image: url('Images/images/11.jpeg');" href="#">
+             <div class="card__overlay"></div>
+             <div class="card__info">
+                 <div class="card__title">Cambodia</div>
+                 <div class="card__text">2015</div>
+             </div>
+         </a>
+
+     </div>
+
+     <nav class="menu">
+         <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+         <label class="menu-open-button" for="menu-open">
+             <span class="hamburger hamburger-1"></span>
+             <span class="hamburger hamburger-2"></span>
+             <span class="hamburger hamburger-3"></span>
+         </label>
+
+         <a href="Macau.html" class="menu-item"> <i class="fa fa-heart"></i> </a>
+         <a href="Osaka.html" class="menu-item"> <i class="fa fa-heart"></i> </a>
+         <a href="Quebec%20City.html" class="menu-item"> <i class="fa fa-heart"></i> </a>
+         <a href="Seoul.html" class="menu-item"> <i class="fa fa-heart"></i> </a>
+         <a href="Shanghai.html" class="menu-item"> <i class="fa fa-heart"></i> </a>
+
+     </nav>
+
+     <!-- filters -->
+     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="navShow">
+         <defs>
+             <filter id="shadowed-goo">
+
+                 <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                 <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                 <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                 <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                 <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                 <feBlend in2="shadow" in="goo" result="goo" />
+                 <feBlend in2="goo" in="SourceGraphic" result="mix" />
+             </filter>
+             <filter id="goo">
+                 <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                 <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                 <feBlend in2="goo" in="SourceGraphic" result="mix" />
+             </filter>
+         </defs>
+     </svg>
+
+
+  <h3>My Favorite FIVE Cities In The World</h3>
+     
+     <div class="clearfix indexRow">
+         <div class="col5">
+             <a href="Macau.html">Macau</a>
+         </div>
+         <div class="col5">
+             <a href="Osaka.html">Osaka</a>
+         </div>
+         <div class="col5">
+             <a href="Quebec%20City.html">Quebec City</a>
+         </div>
+         <div class="col5">
+             <a href="Seoul.html">Seoul</a>
+         </div>
+         <div class="col5">
+             <a href="Shanghai.html">Shanghai</a>
+         </div>
+     </div>
+     
+     
+ </div>
+</section>
+<section class="timeline">
+            <div class="container">                
+                <div class="row">
+                    <a href="">
+                        <div class="country-block col-sm-6">
+                            <i class="jp"></i>
+                            Shanghai
+                        </div>
+                    </a>
+                    <div class="date-block col-sm-6">
+                        <div>1997 - 2016</div>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <a href="">
+                        <div class="country-block reverse col-sm-6 col-sm-push-6">
+                            <i class="vt"></i>
+                            Quebec City
+                        </div>
+                    </a>                        
+                    <div class="date-block reverse col-sm-6 col-sm-pull-6">
+                        <div>20 May 2018 - 25 May 2018</div>
+                    </div>                                    
+                </div>
+                <div class="row">
+                    <a href="">
+                        <div class="country-block cb col-sm-6">
+                            <i class="cb"></i>
+                            Macau
+                        </div>
+                    </a>
+                    <div class="date-block col-sm-6">
+                        <div>Multiple Times</div>
+                    </div>                    
+                </div>
+                <div class="row">   
+                    <a href="">
+                        <div class="country-block reverse col-sm-6 col-sm-push-6">
+                            <i class="th"></i>
+                            Seoul
+                        </div>
+                    </a>                  
+                    <div class="date-block reverse col-sm-6 col-sm-pull-6">
+                        <div>18 March 2015 - 25 March 2015</div>
+                    </div>                                       
+                </div>
+                <div class="row">
+                    <a href="">
+                        <div class="country-block col-sm-6">
+                            <i class="ml"></i>
+                            Osaka
+                        </div>
+                    </a>
+                    <div class="date-block col-sm-6">
+                        <div>2 June 2017- 12 June 2017</div>
+                    </div>                    
+                </div>
+                
+                              
+            </div>
+        </section>
+		
+		
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.1/flickity.pkgd.js"></script>
+
+<script>
+    // console.clear();
+
+    var flkty = new Flickity( '.card-wrap', {
+        contain: true,
+        prevNextButtons: false,
+        pageDots: false,
+        wrapAround: true,
+        adaptiveHeight: true,
+        setGallerySize: false,
+        selectedAttraction: 0.05,
+        freeScrollFriction: .1
+    });
+</script>
+
+
+</html>
+
+<script type="text/javascript" src="js/jquery-core.min.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+
+<script>
+    $('.menu-open-button').click(function () {
+        if ($('.navShow').hasClass('active')){
+            $('.navShow').removeClass('active');
+        }else{
+            $('.navShow').addClass('active');
+        }
+    });
+</script>
+
+<!-- cnzz stat -->
+<!-- cnzz stat end -->
